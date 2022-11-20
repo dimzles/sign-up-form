@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ocean-image">
+        </div>
+        <div class="right">
+            <div class="title-text">This is title text</div>
+            <div class="card">
+                <p class="card-text">Sign up now!</p>
+                <form action="#" method="#">
+                    <fieldset>
+                        <div class="inputs">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="user_email">Email Address:</label>
+                            <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="phone_num">Phone Number:</label>
+                            <input type="tel" id="phone_num" name="phone_num" maxlength="11" pattern="[0]{1}[0-9]{10}" required>
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="user_password">Password:</label>
+                            <input class="error" type="password" id="user_password" name="password" minlength="8" maxlength="64" required>
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input class="error" type="password" id="confirm_password" name="confirm_password" minlength="8" maxlength="64" required>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+                
+                <div class="card-bottom">
+                    <button type="submit" id="create-btn" name="create-btn">Create Account</button>
+                    <p>Already have an account?</p><a href="">Log In</a>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
